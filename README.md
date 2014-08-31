@@ -1,8 +1,8 @@
 Game4commit
 ==========
 
-[![Gamerscoin tip for next commit](http://peer4commit.com/projects/1.svg)](http://peer4commit.com/projects/1)
-[![bitcoin tip for next commit](http://tip4commit.com/projects/560.svg)](http://tip4commit.com/projects/560)
+[![Gamerscoin tip for next commit](http://game4commit.gamers-coin.org/projects/8.svg)](http://game4commit.gamers-coin.org/projects/8)
+[![Bitcoin tip for next commit](https://tip4commit.com/projects/922.svg)](https://tip4commit.com/github/gamers-coin/game4commit)
 
 Donate Gamerscoins to open source projects or make commits and get tips for it.
 
