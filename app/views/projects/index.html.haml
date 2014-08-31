@@ -1,0 +1,27 @@
+#project-index
+  .row
+    .col-md-10
+      %h1 Projects
+    .col-md-2 
+      .text-right
+        = link_to "Create a project", new_project_path, class: 'btn btn-danger btn-block'
+           
+  %p
+    = link_to image_tag( 'changes.png')
+    %table.table.table-hover
+      %thead
+        %tr
+          %th.name Name
+          %th.description Description
+          %th.amount Funds
+          %th.actions
+      %tbody
+        - @projects.each do |project|
+          %tr
+            %td.name
+              %strong= link_to project.name, project
+            %td.description= project.description
+            %td.amount= btc_human project.available_amount_cache
+            %td.actions= link_to 'Details', project, class: 'btn btn-default btn-sm'
+    = paginate @projects
+    
