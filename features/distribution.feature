@@ -212,12 +212,12 @@ Feature: Fundraisers can distribute funds
     When I visit the link to set my password and address from the email
     And I fill "Password" with "password"
     And I fill "Password confirmation" with "password"
-    And I fill "Peercoin address" with "mubmzLrtTgDE2WrHkiwSFKuTh2VTSXboYK"
+    And I fill "Gamerscoin address" with "mubmzLrtTgDE2WrHkiwSFKuTh2VTSXboYK"
     And I click on "Save"
 
     Then I should see "Information saved"
     And the user with email "bob@example.com" should have "password" as password
-    And the user with email "bob@example.com" should have "mubmzLrtTgDE2WrHkiwSFKuTh2VTSXboYK" as peercoin address
+    And the user with email "bob@example.com" should have "mubmzLrtTgDE2WrHkiwSFKuTh2VTSXboYK" as gamerscoin address
 
     When I log out
     And I log in as "alice"
@@ -256,12 +256,12 @@ Feature: Fundraisers can distribute funds
     When I visit the link to set my password and address from the email
     And I fill "Password" with "password"
     And I fill "Password confirmation" with "password"
-    And I fill "Peercoin address" with "mubmzLrtTgDE2WrHkiwSFKuTh2VTSXboYK"
+    And I fill "Gamerscoin address" with "mubmzLrtTgDE2WrHkiwSFKuTh2VTSXboYK"
     And I click on "Save"
 
     Then I should see "Information saved"
     And the user with email "bob@example.com" should have "password" as password
-    And the user with email "bob@example.com" should have "mubmzLrtTgDE2WrHkiwSFKuTh2VTSXboYK" as peercoin address
+    And the user with email "bob@example.com" should have "mubmzLrtTgDE2WrHkiwSFKuTh2VTSXboYK" as gamerscoin address
 
   Scenario: Send to someone who doesn't want to be notified
     Then pending
@@ -348,18 +348,18 @@ Feature: Fundraisers can distribute funds
     And the email should include "alice"
     And the email should include a link to the last distribution
     When I log out
-    And I click on the "Set your Peercoin address" link in the email
+    And I click on the "Set your Gamerscoin address" link in the email
     Then I should see "Forgot your password?"
     When I fill "Email" with "bob@example.com"
     And I fill "Password" with "password"
     And I click on "Sign in" in the sign in form
-    Then I should see "Peercoin address"
-    When I fill "Peercoin address" with "mubmzLrtTgDE2WrHkiwSFKuTh2VTSXboYK"
+    Then I should see "Gamerscoin address"
+    When I fill "Gamerscoin address" with "mubmzLrtTgDE2WrHkiwSFKuTh2VTSXboYK"
     And I fill "Current password" with "password"
     And I click on "Update"
     Then I should see "You updated your account successfully"
 
-    And the user with email "bob@example.com" should have "mubmzLrtTgDE2WrHkiwSFKuTh2VTSXboYK" as peercoin address
+    And the user with email "bob@example.com" should have "mubmzLrtTgDE2WrHkiwSFKuTh2VTSXboYK" as gamerscoin address
 
     When I log out
     And I log in as "alice"

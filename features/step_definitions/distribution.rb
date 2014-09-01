@@ -149,7 +149,7 @@ end
 
 When(/^I set my address to "(.*?)"$/) do |arg1|
   step 'I go to edit my profile'
-  fill_in "Peercoin address", with: arg1
+  fill_in "Gamerscoin address", with: arg1
   if has_field?("Current password")
     fill_in "Current password", with: "password"
   end
@@ -176,14 +176,14 @@ Then(/^the email should include a link to the last distribution$/) do
 end
 
 When(/^I visit the link to set my password and address from the email$/) do
-  step "I click on the \"Set your password and Peercoin address\" link in the email"
+  step "I click on the \"Set your password and Gamerscoin address\" link in the email"
 end
 
 Then(/^the user with email "(.*?)" should have "(.*?)" as password$/) do |arg1, arg2|
   User.find_by(email: arg1).valid_password?(arg2).should eq(true)
 end
 
-Then(/^the user with email "(.*?)" should have "(.*?)" as peercoin address$/) do |arg1, arg2|
+Then(/^the user with email "(.*?)" should have "(.*?)" as Gamerscoin address$/) do |arg1, arg2|
   User.find_by(email: arg1).bitcoin_address.should eq(arg2)
 end
 
