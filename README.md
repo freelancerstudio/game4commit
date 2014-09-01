@@ -8,6 +8,8 @@ Donate Gamerscoins to open source projects or make commits and get tips for it.
 
 Official site: http://game4commit.gamers-coin.org/
 
+Development Guide :
+https://github.com/gamers-coin/game4commit/wiki/Development
 
 License
 =======
