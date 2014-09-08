@@ -3,6 +3,9 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 4.0.2'
 
+#Thin
+gem 'thin'
+
 # Databases
 gem 'sqlite3', group: :development
 gem 'mysql2', group: :mysql
