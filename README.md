@@ -1,6 +1,8 @@
 Game4commit
 ==========
 
+![Gamerscoin](https://raw.githubusercontent.com/gamers-coin/gamers-coinv3/01d1ca6d63b565ea46dcee3b6552b030d57d1187/src/qt/res/icons/bitcoin.png)![Gamerscoin](http://i.imgur.com/Nfb8DQx.png)
+
 [![Gamerscoin tip for next commit](http://game4commit.gamers-coin.org/projects/8.svg)](http://game4commit.gamers-coin.org/projects/8)
 [![Bitcoin tip for next commit](https://tip4commit.com/projects/922.svg)](https://tip4commit.com/github/gamers-coin/game4commit)
 
