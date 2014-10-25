@@ -9,9 +9,11 @@ Anyone can start collecting funds in a few clicks. You just have to explain what
 
 People can easily donate to the projects they want to support by sending cryptocurrencies. The fundraiser can then distribute the funds to the people who make the project happen.
 
+
 How is it different than other crowdfunding sites?
 --------------------------------------------------
 On Game4commit the fundraiser is not expected to do the actual work. His job is to collect funds and distribute them to the people who work on the project. He may for example reward commits on an open source project or pay a lobbyist.
+
 
 Why?
 ----
@@ -24,6 +26,7 @@ Or imagine you favorite band has given up. You can raise funds to pay them to wo
 
 Why give control to a fundraiser and not directly to the people?
 ----------------------------------------------------------------
+
 Giving direct control to multiple persons is a complex task with no ideal solution. For example are decisions made at the majority? Is there a quorum? Can people vote for multiple choices? Are votes proportional to the amount you gave?
 
 And there is a big risk. For example if all decisions are made proportional to the amount given, then someone can easily take over the funds by sending more than everybody else. He can then send the whole funds to himself.
@@ -68,22 +71,28 @@ When you donate Game4commit asks you for a return address. This address will be 
 
 Does it work?
 -------------
+
 Game4commit is still young but yes. Some projects were successfully managed.
 
 We initially started as a [tip4commit](http://tip4commit.com/) clone where GitHub commits were automatically rewarded 1% of the balance. We moved recently to the more generic system described here.
 
 Examples of successful projects:
-* [Game4commit](http://game4commit.com/projects/1) itself
-* [A Gamecoin marketing video](http://game4commit.com/projects/68)
-* [Gameunity](http://game4commit.com/projects/74)
+* [Game4commit](http://game4commit.gamers-coin.org/projects/8) itself
+* [Gamerscoin Website](http://game4commit.gamers-coin.org/projects/17)
+* [Gamerscoin Steam Tip Bot](http://game4commit.gamers-coin.org/projects/21)
 
 Currency
 --------
-For now the only supported currency is [Gamecoin](http://gamecoin.net/). Other currencies will be added later.
+
+For now the only supported currency is [Gamerscoin](http://gamers-coin.org).
+Gamerscoin is the 1st Free Open Source Revolutionary Digital Gaming Currency sent through the internet.
+Gamerscoin focus on Video games,Esport and Digital Gaming Goods.
+Created by Gamers Controlled by Gamers. A new currency made by gamers for Gamers and GameDevs are you prepared ?
 
 
 How can I raise funds?
 ----------------------
+
 Click on the <%= link_to '"Create a project"', new_project_path %> button. You'll have to fill a detailed description. Here are some recommendations:
 
 * State the main goal of your game4commit project, and decide what can and cannot be changed for the project. The main goal cannot be changed.
@@ -97,6 +106,7 @@ The project will be visible on Game4commit but it will not be particularly highl
 
 Can fundraisers get paid for their work?
 ----------------------------------------
+
 Yes. A fundraisers can send money to himself for his raising and distributing jobs. He can also reward himself to do actual work. That's up to him.
 
 Fundraisers should explain in the project description whether they intend to pay themselves and how much.
@@ -104,11 +114,22 @@ Fundraisers should explain in the project description whether they intend to pay
 
 How can I get paid to do the actual work?
 -----------------------------------------
+
 Check the policies of the projects. Fundraiser can chose to raise bounty or a specific percentage of the donated funds for specific tasks or assign a percentage of the fund for commits in case of a development. If unclear ask the fundraiser. Disputes should be resolved between the developer and the fundraiser.
+We automatically parse github for new commits.
+Project Admin Decide the tip amounts.
+--------------------
+![](http://i.imgur.com/ISHzHRJ.png)
+
+Auto Payout Sample :
+--------------------
+![](http://i.imgur.com/OFuiTIV.png)
+
 
 How do I Push my Commits?
 -------------------------
 Getting write access to the "Master" of a project involves that the project maintainer provides access to you in Github. This type of access would only be given to people trusted by the maintainer. If you already have write access to the project, just push your commits to the default branch of the project as usual. Otherwise, you'll have to fork the project (i.e. Start your own project based on the supported project), make some changes and create a pull request to propose your changes. If your pull request is accepted (Merged), you'll receive one tip per commit. If the changes are simple enough, you can do them in your browser by editing the files on GitHub. Otherwise, you'll have to use Git to clone your fork, make some changes, commit them and push the commits to GitHub. You can find a lot of information about that on GitHub help and on the web.
+
 
 Make Sure You Read the Project Charter & Tipping Policies Before Starting
 -------------------------------------------------------------------------
@@ -119,13 +140,11 @@ How do I donate to a project I like?
 Browse the project list and click on the "Donate" button. You will be asked for a personal address that will be used if Game4commit or the fundraiser ever needs to identify you. Then Game4commit will give you an address to which you just have to send Gamecoins. 99% of your donation will be available to the fundraiser. 1% will be kept to host Game4commit and pay the transaction fees.
 
 You can also donate without providing an address. But the fundraiser won't be able to return you the funds if he ever wants to. And if the fundraiser organizes a vote or send rewards, you won't be able to participate.
+![](http://i.imgur.com/wapUvKy.png)
 
 What's going to happen next?
 ----------------------------
 There are many features planed. Their achievement depends on the willingness of donors, fundraisers and developers.
-
-### Bitcoin support
-Adding support for Bitcoin is an important step. We can easily change Game4commit to support projects either in Bitcoin or in Gamecoin. But supporting multiple currecies in the same project will require more work and an external service to automatically convert currencies.
 
 ### Multi-signature
 The most important imminent change is the introduction of multi-signature donation addresses:
@@ -163,8 +182,4 @@ What measures have been taken to secure the funds on Game4commit?
 The project funds are isolated in different accounts in the wallet, so if someone ever finds a way to distribute more funds than the project balance, Gamecoin will not take the funds from another project and will refuse the transaction. Projects with a high balance have a part of its funds moved to cold storage. The website runs in an isolated virtual server running only this service. There's an <%= link_to "audit page", audit_path %> that shows the status of all project accounts.
 
 When multisignatures are implemented Game4commit will not have direct the control over the funds (see above).
-
-Contact
--------
-If you have any question send a message to <%= mail_to "contact@game4commit.com" %> or [open an issue on GitHub](https://github.com/sigmike/game4commit/issues/new).
 

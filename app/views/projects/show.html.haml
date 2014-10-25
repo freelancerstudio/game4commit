@@ -15,7 +15,9 @@
       = render_markdown @project.detailed_description
 
     - if @project.tipping_policies_text.try(:text).present?
-      %h4 Tipping policies
+      %h4 &nbsp;
+      %h4 &nbsp;
+      %h3 Tipping policies :
       = render_markdown @project.tipping_policies_text.text
       %small
         %em
